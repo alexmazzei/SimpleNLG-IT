@@ -2,7 +2,7 @@
 
   SimpleNLG-IT is an Italian adaptation of SimpleNLG-EnFr 1.1, that is
   a bilingual English/French adaption of SimpleNLG v4.2. SimpleNLG-IT
-  has been developed by Alessandro Mazzei, Cristina Battagnino and
+  has been developed by Alessandro Mazzei, Cristina Battaglino and
   Cristina Bosco. Plese cite -> INLG16_TOAPPEAR if you use this
   software.
 
@@ -18,15 +18,10 @@
 + Soon we add a more documents DOCS directory. In the while, follow
   the examples provided in the >>package tutorial.italian;<<
 
-  ++ A very simple start:
-  1. cd DOCS
-  2. javac -cp .:./simplenlg-it.jar Testsimplenlgit.java
-  3. java -cp .:./simplenlg-it.jar Testsimplenlgit --> "Loro erano belli."
-
-  ++ A multilingual start:
+  ++ A very simple multilingual start:
   1. cd DOCS
   2. javac -cp .:./simplenlg-it.jar MultiLingualTest.java
   3. java -cp .:./simplenlg-it.jar MultiLingualTest --> "Trilingual love ..."
 
-+ SimpleLEX-IT, that is the lexicon used in SimpleNLG-IT, has a specific github page:
-  https://github.com/alexmazzei/SimpleLEX-IT
++ SimpleLEX-IT, that is the lexicon used in SimpleNLG-IT, has a
+  specific github page: https://github.com/alexmazzei/SimpleLEX-IT
