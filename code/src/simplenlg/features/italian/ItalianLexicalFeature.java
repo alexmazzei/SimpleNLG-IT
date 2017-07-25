@@ -496,6 +496,50 @@ public abstract class ItalianLexicalFeature {
 	 * </table>
 	 */
 	public static final String COLOUR = "colour";
+	/**
+	 * <p>
+	 * This feature is used for determining the position of adjectives. Setting
+	 * this value to true means that the adjective can occupy the
+	 * <em>colore</em> position as in "la rosa rossa/the rose red",
+	 * "la casa gialla/the home yellow"
+	 * </p>
+	 * <table border="1">
+	 * <tr>
+	 * <td><b>Feature name</b></td>
+	 * <td><em>colore</em></td>
+	 * </tr>
+	 * <tr>
+	 * <td><b>Expected type</b></td>
+	 * <td><code>Boolean</code></td>
+	 * </tr>
+	 * <tr>
+	 * <td><b>Created by Alessandro Mazzei 170721</b></td>
+	 * <td>Any lexicon that supports adjective positioning or by the user</td>
+	 * </tr>
+	 * <tr>
+	 * <td><b>Used by</b></td>
+	 * <td>The syntax processor to determine the position and ordering of adjectives.</td>
+	 * </tr>
+	 * <tr>
+	 * <td><b>Applies to</b></td>
+	 * <td>Adjectives within noun phrases.</td>
+	 * </tr>
+	 * <tr>
+	 * <td><b>Default</b></td>
+	 * <td><code>Boolean.FALSE</code></td>
+	 * </tr>
+	 * </table>
+	 */
+	public static final String COLOREPOS = "colorepos";
+	public static final String VALUTATIVIPRE = "valutativipre";
+	public static final String VALUTATIVIPOS = "valutativipos";
+	public static final String DIMENSIONEPRE = "dimensionepre";
+	public static final String ETAPRE = "etàpre";
+	public static final String FISICIPRE = "fisicipre";
+	public static final String RELAZIONEPOS = "relazionepos";
+	
+	
+	
 	
 	/**
 	 * <p>

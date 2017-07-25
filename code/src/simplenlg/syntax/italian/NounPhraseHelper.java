@@ -352,7 +352,12 @@ public class NounPhraseHelper extends AbstractNounPhraseHelper
 			if ((modifierHead.getFeatureAsBoolean(ItalianLexicalFeature.POSSESSIVE)
 						|| isOrdinal(modifierHead) 
 						|| modifierHead.getFeatureAsBoolean(ItalianLexicalFeature.ORDINAL)
-						|| modifierHead.getFeatureAsBoolean(ItalianLexicalFeature.QUALITATIVE))
+						|| modifierHead.getFeatureAsBoolean(ItalianLexicalFeature.QUALITATIVE) 
+						|| modifierHead.getFeatureAsBoolean(ItalianLexicalFeature.VALUTATIVIPRE)
+						|| modifierHead.getFeatureAsBoolean(ItalianLexicalFeature.DIMENSIONEPRE)
+						|| modifierHead.getFeatureAsBoolean(ItalianLexicalFeature.ETAPRE)
+						|| modifierHead.getFeatureAsBoolean(ItalianLexicalFeature.FISICIPRE)
+						)
 					&& modifierComplements.isEmpty()) {
 						nounPhrase.addPreModifier(modifierElement);
 						return;
@@ -360,7 +365,11 @@ public class NounPhraseHelper extends AbstractNounPhraseHelper
 			//if AdjPhrase no complements, RELATION, COLOUR, GEOGRAPHIC --> postposition
 			else if ((modifierHead.getFeatureAsBoolean(ItalianLexicalFeature.RELATION)
 					|| modifierHead.getFeatureAsBoolean(ItalianLexicalFeature.COLOUR)
-					|| modifierHead.getFeatureAsBoolean(ItalianLexicalFeature.GEOGRAPHIC))
+					|| modifierHead.getFeatureAsBoolean(ItalianLexicalFeature.GEOGRAPHIC)
+					|| modifierHead.getFeatureAsBoolean(ItalianLexicalFeature.COLOREPOS) //Ale170721
+					|| modifierHead.getFeatureAsBoolean(ItalianLexicalFeature.VALUTATIVIPOS) //Ale170721
+					|| modifierHead.getFeatureAsBoolean(ItalianLexicalFeature.RELAZIONEPOS) //Ale170721					
+					)
 				&& modifierComplements.isEmpty()) {
 					nounPhrase.addPostModifier(modifierElement);
 					return;
